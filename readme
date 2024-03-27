@@ -12,8 +12,9 @@ ADVANCED
 
 model options:
 - semantec search
-- BERT
+- BERT (?)
 - knn w/ euclidian distance
+- Cosine similarity, euclidian distance (?)
 
 
 NEAL:
