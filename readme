@@ -6,13 +6,24 @@ SIMPLER
 - count vectorizer
 ADVANCED
 - doc2vec
+- word2vec
 - BERT embeddings
+- 
 
 model options:
-- Blob storage (azure) w/ Azure Cognative Search
+- semantec search
 - BERT
 - knn w/ euclidian distance
 
+
+NEAL:
+TFIDF, BERT
+
+DAN:
+semantec search, GLOVE embeddings,
+
+TROY:
+ELECTRA, 
 
 We need to create a vector database to store the text data once it is vectorized. (unsure if this is some type of special file or something).
 
