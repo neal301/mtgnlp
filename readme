@@ -8,19 +8,20 @@ ADVANCED
 - doc2vec
 - word2vec
 - BERT embeddings
-- 
+- GloVe
 
 model options:
 - semantec search
-- BERT
+- BERT (?)
 - knn w/ euclidian distance
+- Cosine similarity, euclidian distance (?)
 
 
 NEAL:
 TFIDF, BERT
 
 DAN:
-semantec search, GLOVE embeddings,
+semantec search, GLOVE embeddings, word2vec
 
 TROY:
 ELECTRA, 
