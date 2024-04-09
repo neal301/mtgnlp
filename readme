@@ -19,10 +19,10 @@ NEAL:
 TFIDF, BERT
 
 DAN:
-semantec search, GLOVE embeddings, doc2vec
+GLOVE embeddings, word2vec, fasttext
 
 TROY:
-ELECTRA, doc2vec
+ELMO, ULMfit, doc2vec
 
 We need to create a vector database to store the text data once it is vectorized. (unsure if this is some type of special file or something).
 
