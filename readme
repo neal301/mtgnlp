@@ -1,5 +1,3 @@
-**DOWNLOAD THE CARD DATA TO YOUR data FOLDER SO EVERYONE'S PATH IS THE SAME**
-
 Vectorization options:
 SIMPLER
 - TF-IDF 
@@ -21,12 +19,18 @@ NEAL:
 TFIDF, BERT
 
 DAN:
-semantec search, GLOVE embeddings, word2vec
+semantec search, GLOVE embeddings, doc2vec
 
 TROY:
-ELECTRA, 
+ELECTRA, doc2vec
 
 We need to create a vector database to store the text data once it is vectorized. (unsure if this is some type of special file or something).
 
 HYBRID APPRAOCH:
-    This is how we layer on the color, type, and other attributes. Things like color would be used as an initial screen to filter the cards, if there is a secondary attribute or something (like type? cost?) then we could vectorize that if need be (or just change that to a number) and add it to the search. We would weight the relevent pieces to create an overall similarity score.
+    This is how we layer on the color, type, and other attributes. Things like color would be used as an initial screen to filter the cards, if there is a secondary attribute or something (like type? cost?) 
+then we could vectorize that if need be (or just change that to a number) and add it to the search. We would weight the relevent pieces to create an overall similarity score.
+
+TEST CARDS:
+Thorbran, Thane of Red Fell
+Rocco, Street Chef
+Sai, Master Thopterist
