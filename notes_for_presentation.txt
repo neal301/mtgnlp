@@ -30,3 +30,16 @@ Sure, let’s break down the embed_text function:
 
     return embeddings: Finally, the function returns the embeddings of the [CLS] token, which can be used as a sentence-level embedding of the input text.
 
+- question about shape of vectors:
+
+    You’re correct that each token in BERT does indeed have a 768-dimensional vector associated with it (for BERT-Base). This vector captures the contextual information of that token within the sentence. 
+    However, when we’re dealing with tasks that require understanding the entire sentence or paragraph (like text classification or semantic similarity), we need a single vector representation for the whole input.
+
+    The [CLS] token is designed for this purpose. During pre-training, BERT learns to aggregate the context of the entire sentence into the [CLS] token. So, the 768-dimensional vector of the [CLS] 
+    token is a summary of the entire sentence, and it’s often used for sentence-level tasks.
+
+    That being said, you’re also correct that some information might be lost when we only use the [CLS] token. If your task requires more fine-grained information (like token-level tasks such as named 
+    entity recognition or question answering), you might want to use the individual token embeddings instead of, or in addition to, the [CLS] token.
+
+    In summary, whether to use the [CLS] token or the individual token embeddings (or both) depends on the specific requirements of your task. The [CLS] token provides a compact, sentence-level representation, 
+    while the individual token embeddings provide more detailed, token-level information. Both carry contextual information, but at different levels of granularity. 
